@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lotto</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <script src="demo.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to Lotto!</h1>
+            <h2 class="line1">Rules are as follows: </h2>
+            <h3 class="line2">Users can enter three numbers (ranging from 1 to 10) on the web page. </h3>
+            <h3 class="line3">Each time the game starts, three winning numbers (ranging from 1 to 10 without repetition) will be randomly generated. </h3>
+            <h3 class="line4">When the user enters three numbers and presses the draw button, the input numbers will be compared with the winning numbers (regardless of their order).</h3>
+            <h3 class="line5">If all three numbers match, it's the first prize. If two numbers match, it's the second prize. If one number matches, it's the third prize.</h3>
+            <br>
+            <label>Enter three numbers: </label>
+            <input id="input1" type="number" min="1" max="10">
+            <input id="input2" type="number" min="1" max="10">
+            <input id="input3" type="number" min="1" max="10">
+            <button onclick="check()" id="SubmitBTN">Submit</button>
+            <button onclick="reset()">Reset</button>
+            <div id="result"></div>
+        </div>
+    </body>
+</html>
