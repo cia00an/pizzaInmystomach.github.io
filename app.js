@@ -30,7 +30,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // 插入用戶數據的函數
 async function insertUsers() {
-    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+    /*---------------IAN EDITED---------------*/
+    const client = new MongoClient(uri);  /*砍掉參數列過時的項目*/
     
     try {
         await withTimeout(client.connect(), 5000); // 設定超時時間為5秒
